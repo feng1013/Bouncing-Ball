@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyAction" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bouncingball.FXMLDocumentController">
+   <children>
+      <Button layoutX="170.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleButtonAction" text="START/ PAUSE (Space)">
+         <font>
+            <Font name="Avenir Roman" size="13.0" />
+         </font></Button>
+      <Label fx:id="label" layoutX="170.0" layoutY="120.0" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="417.0">
+         <font>
+            <Font name="Avenir Roman" size="15.0" />
+         </font></Label>
+      <Circle fx:id="circle1" fill="#d9b3b3" layoutX="20.0" layoutY="20.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Rectangle fx:id="rectangle1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="200.0" />
+      <Circle fx:id="circle2" fill="#cdcd9a" layoutX="100.0" layoutY="100.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Button fx:id="buttonAdd" layoutX="170.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleButtonAction2" text="ADD (Enter)">
+         <font>
+            <Font name="Avenir Roman" size="13.0" />
+         </font></Button>
+      <Circle fx:id="circle3" fill="#a3d1d1" layoutX="110.0" layoutY="110.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="circle4" fill="#c7c7e2" layoutX="120.0" layoutY="120.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="circle5" fill="#d2a2cc" layoutX="130.0" layoutY="130.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="circle6" fill="#b87070" layoutX="140.0" layoutY="140.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="circle7" fill="#afaf61" layoutX="150.0" layoutY="150.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="circle8" fill="#6fb7b7" layoutX="160.0" layoutY="160.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="circle9" fill="#9999cc" layoutX="170.0" layoutY="170.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="circle10" fill="#b766ad" layoutX="180.0" layoutY="180.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" />
+      <Button fx:id="buttonDrop" layoutX="170.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleButtonAction3" text="DROP (Escape)" />
+      <Label fx:id="label1" layoutX="170.0" layoutY="90.0" prefHeight="26.0" prefWidth="248.0" text="Bouncing Balls">
+         <font>
+            <Font name="Avenir Medium" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonExit" layoutX="170.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleButtonAction4" text="EXIT" />
+   </children>
+</Pane>
